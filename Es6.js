@@ -1,93 +1,93 @@
-// const list={
-//   first:'madhu',
-//   age:25,
-//   gender:'male'
-// };
-//var greeting=(message,name)=> console.log(this.first + message+name);
-// var greeting=function (message,name) {
-// 	console.log(this.first+message+name);
-// 	// body...
-// }
-// greeting.call(list,'hello','reddy');
+const list={
+  first:'madhu',
+  age:25,
+  gender:'male'
+};
+var greeting=(message,name)=> console.log(this.first + message+name);
+var greeting=function (message,name) {
+	console.log(this.first+message+name);
+	// body...
+}
+greeting.call(list,'hello','reddy');
 
 
 
 /* const */
-// if(true){
-//   const name= 'madhu';
-//   console.log(name);
-// }
-// console.log(name);
+if(true){
+  const name= 'madhu';
+  console.log(name);
+}
+console.log(name);
 
 
 /*shortend properties */
-// let firstName='madhu';
-// let lastName='reddy';
-// let person={firstName,lastName};
-// console.log(person);
-// let son='sudan';
-// let daughter='neha';
-// let person1={son,daughter}
-// let family={person,person1};
-// console.log(family)
+let firstName='madhu';
+let lastName='reddy';
+let person={firstName,lastName};
+console.log(person);
+let son='sudan';
+let daughter='neha';
+let person1={son,daughter}
+let family={person,person1};
+console.log(family)
 
 
 /* Objects Enhancements */
 
-// let name='madhu';
-// let age='26';
-// let gender='male';
-// let weight='148lbs';
+let name='madhu';
+let age='26';
+let gender='male';
+let weight='148lbs';
 
-// let person={
-// 	name,
-// 	age,
-// 	gender,
-// 	weight,
-// 	fullDetails(){
-// 		console.log('Name:'+person.name+' '+'Age:'+person.age+' '+'Gender:'+person.gender+' '+'Weight:'+person.weight);
-// 	}
-// }
-// console.log(person.age);
-// person.fullDetails();
+let person={
+	name,
+	age,
+	gender,
+	weight,
+	fullDetails(){
+		console.log('Name:'+person.name+' '+'Age:'+person.age+' '+'Gender:'+person.gender+' '+'Weight:'+person.weight);
+	}
+}
+console.log(person.age);
+person.fullDetails();
 
 
 
 /* spread operator */
 
-// let array1=[4,5,6,7];
-// let array2=[8,9,10,11];
-// let arr=array1.concat(array2);
-// console.log(...arr);
+let array1=[4,5,6,7];
+let array2=[8,9,10,11];
+let arr=array1.concat(array2);
+console.log(...arr);
 
-// function add(a,b,c) {
-// 	let result=a+b+c;
-// 	console.log(result);
-// 	// body...
-// }
+function add(a,b,c) {
+	let result=a+b+c;
+	console.log(result);
+	// body...
+}
 
-// add(...array1);
-// array1.push(...array2);
-// console.log(...array1);
+add(...array1);
+array1.push(...array2);
+console.log(...array1);
 
 
 
 
 /* Template Literals */
-// function fullName(name,lastName) {
+function fullName(name,lastName) {
 
-// 	return `${name} ${lastName}`;
-// 	// body...
-// }
+	return `${name} ${lastName}`;
+	// body...
+}
 
 
-// let myname1 = 'madhu';
-// const  myname2='reddy';
-// console.log(`my name is ${myname1} ${myname2}`)
+let myname1 = 'madhu';
+const  myname2='reddy';
+console.log(`my name is ${myname1} ${myname2}`)
 
-// var message=fullName`my name is ${'reddy'} ${'madhu'}`
+var message=fullName`my name is ${'reddy'} ${'madhu'}`
 
-// console.log(message);
+console.log(message);
 
 
 
@@ -96,15 +96,15 @@
 
 /* Destructuring Asssignment */
 
-/* var {name,age,gender}={
+ var {name,age,gender}={
 	name:'madhu',
 	age:25,
 	gender:'male'
 }
 
-console.log(`${name} ${age}`);*/
+console.log(`${name} ${age}`);
 
-/*function assign() {
+function assign() {
 	return  {
 		name:'madhu',
 		age:25,
@@ -115,12 +115,12 @@ console.log(`${name} ${age}`);*/
 	
 }
 let {name:firstName,age,gender:sex}= assign();
-console.log(sex);*/
+console.log(sex);
 
-/*var [name,,last]=['madhu','sudan','reddy','sanaiahgari'];
-console.log(last);*/
+var [name,,last]=['madhu','sudan','reddy','sanaiahgari'];
+console.log(last);
 
-/*var people=[
+var people=[
 	{
 		name:'madhu',
 		age:25,
@@ -145,18 +145,20 @@ console.log(last);*/
 		gender:'male',
 		height:'5.6inch'
 	}
-]*/
-/*var [,siva]= people;
+]
+
+
+var [,siva]= people;
 
 function display({gender}) {
 	console.log(gender);
 	// body...
 }
-display(siva);*/
+display(siva);
 
-//people.forEach(({age,name})=> console.log(age+name));
+people.forEach(({age,name})=> console.log(age+name));
 
-/*let array=[21,32,4,3,45,56,67];
+let array=[21,32,4,3,45,56,67];
 
 let rakesh = array.map((item,index)=> {
 
@@ -165,20 +167,20 @@ let rakesh = array.map((item,index)=> {
 	console.log(result)
 	return result;
 	});
-console.log('rakesh : ', rakesh);*/
+console.log('rakesh : ', rakesh);
 
 //let array=[21,32,4,3,45,56,67];
 
-/*people.forEach((item)=> {
+people.forEach((item)=> {
 
 	console.log(item.age)
-	});*/
+	});
 
 
 
 /*Promises*/
 
-	/*var prom= new Promise((resolve,reject)=>{
+	var prom= new Promise((resolve,reject)=>{
 		if(false){
 			resolve('Hello madhu');
 		}else{
@@ -186,7 +188,7 @@ console.log('rakesh : ', rakesh);*/
 		}
 	});
 	prom.then((data)=>console.log('success'));
-	prom.catch((error)=>console.log('error'));*/
+	prom.catch((error)=>console.log('error'));
 
 
 /*Maps and weekMaps*/
@@ -200,19 +202,19 @@ size
 clear()
 has()*/
 
-/*var mymap= new Map();
+var mymap= new Map();
 mymap.set('name','madhu');
 mymap.set('age',24);
  console.log(mymap.get('age'));
 mymap.clear();
 console.log(mymap.size);
-console.log(mymap.has('had'));*/
+console.log(mymap.has('had'));
 
-/*
-Iterators
-keys()
-entries()
-values
+
+// Iterators
+// keys()
+// entries()
+// values
 for(var key of mymap.keys()){
 	console.log(key);
 }
@@ -221,14 +223,14 @@ for(var value of mymap.values()){
 }
 for(var [key,value] of mymap.entries()){
 	console.log(key+'='+value);
-}*/
+}
 
 
 
 
 /*Es6 Rest Parameters*/
 
-/*function store() {
+function store() {
 	var types={
 		fruit:[],
 		vegetable:[]
@@ -250,7 +252,7 @@ var mystore= new store();
 mystore.add('fruit','apple','oranges');
 mystore.add('vegetable','bringal','palak');
 console.log(...mystore.types.fruit);
-*/
+
 
 /*var n= prompt("enter number"), i,s= 0,r; 
  
